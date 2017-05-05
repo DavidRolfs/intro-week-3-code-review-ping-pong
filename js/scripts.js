@@ -7,17 +7,17 @@ function counter(countTo){
   list = []
   for(var i = 1; i<= countTo; i++){
     if(i % 15 === 0){
-      array.push("Ping-Pong");
+      array[i] = ("Ping-Pong");
     }else if(i % 5 === 0){
-      array.push("Pong");
+      array[i] = ("Pong");
     }else if(i % 3 === 0){
-      array.push("Ping");
+      array[i] = ("Ping");
     }else{
-      array.push(i)
+      array[i] = i
     }
   }
-  list = array.map(function(word){
-    return("<li>"+word+"</li>");
+  list = array.map(function(listItem){
+    return("<li>"+listItem+"</li>");
   });
 };
 
@@ -29,6 +29,7 @@ $(document).ready(function(){
 
     var countTo = $("#countTo").val();
     counter(countTo);
+    
     $("ul").empty();
     $("ul").append(list);
   });

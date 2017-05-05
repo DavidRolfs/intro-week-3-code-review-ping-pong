@@ -1,7 +1,5 @@
 //User interface logic
 
-var list
-
 function counter(countTo){
   var array = []
   list = []
@@ -16,9 +14,7 @@ function counter(countTo){
       array[i] = i
     }
   }
-  list = array.map(function(listItem){
-    return("<li>"+listItem+"</li>");
-  });
+  return array;
 };
 
 
@@ -28,9 +24,11 @@ $(document).ready(function(){
     event.preventDefault()
 
     var countTo = $("#countTo").val();
-    counter(countTo);
-    
+    var result = counter(countTo);
+
     $("ul").empty();
-    $("ul").append(list);
+    result.forEach(function(listItem){
+      return($("ul").append("<li>" + listItem + "</li>"));
+    });
   });
 });

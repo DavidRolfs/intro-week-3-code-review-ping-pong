@@ -29,9 +29,9 @@ $(document).ready(function(){
     var countBy = parseInt($("#countBy").val())
     var result = counter(countTo, countBy, "Ping", "Pong", "");
 
-
     $("#results").show()
     $("ul").empty();
+
     result.forEach(function(listItem){
       return($("ul").append("<li>" + listItem + "</li>"));
     });

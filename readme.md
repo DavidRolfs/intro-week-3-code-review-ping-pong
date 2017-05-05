@@ -20,7 +20,7 @@ https://davidrolfs.github.io/intro-week-3-code-review-ping-pong/
 
 ## Setup/Installation Requirements
 
-* Go to Github repository page https://github.com/DavidRolfs/intro-week-3-code-review-ping-pong
+* Go to Github repository page at https://github.com/DavidRolfs/intro-week-3-code-review-ping-pong
 * Click the "download or clone" button and copy the link.
 * In your computers terminal type "git clone" & paste the copied link.
 * Once downloaded you can open the index.html file in the browser of your choice.

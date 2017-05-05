@@ -1,7 +1,10 @@
-var array = []
-var list = []
+//User interface logic
+
+var list
 
 function counter(countTo){
+  var array = []
+  list = []
   for(var i = 1; i<= countTo; i++){
     if(i % 15 === 0){
       array.push("Ping-Pong");
@@ -19,15 +22,14 @@ function counter(countTo){
 };
 
 
-
+// Business logic
 $(document).ready(function(){
   $("form#form").submit(function(event){
     event.preventDefault()
 
     var countTo = $("#countTo").val();
-
-    var result = counter(countTo);
-    $("ul").empty()
+    counter(countTo);
+    $("ul").empty();
     $("ul").append(list);
   });
 });

@@ -6,11 +6,11 @@ function counter(countTo, countBy, wordOne, wordTwo, start){
   for(var i = 0; i<= countTo; i += countBy){
     if(i === 0){
       array[i] = start;
-    }else if(i % 15 === 0 && i > 0){
+    }else if(i % 15 === 0){
       array[i] = (wordOne + wordTwo);
-    }else if(i % 5 === 0 && i > 0){
+    }else if(i % 5 === 0){
       array[i] = (wordTwo);
-    }else if(i % 3 === 0 && i > 0){
+    }else if(i % 3 === 0){
       array[i] = (wordOne);
     }else{
       array[i] = i

@@ -3,13 +3,13 @@ var array = []
 function counter(countTo){
   for(var i = 1; i<= countTo; i++){
     if(i % 15 === 0){
-      array.push("Ping-Pong");
+      array.push("<li>"+"Ping-Pong"+"</li>");
     }else if(i % 5 === 0){
-      array.push("Pong");
+      array.push("<li>"+"Pong"+"</li>");
     }else if(i % 3 === 0){
-      array.push("Ping");
+      array.push("<li>"+"Ping"+"</li>");
     }else{
-      array.push(i)
+      array.push("<li>"+i+"</li>")
     }
   }
   return array
@@ -32,6 +32,6 @@ $(document).ready(function(){
 
     var result = counter(countTo);
 
-    $("#results").text(result);
+    $("ul").append(result);
   });
 });

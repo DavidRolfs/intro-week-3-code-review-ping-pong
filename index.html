@@ -9,15 +9,33 @@
   </head>
   <body>
     <div class="container">
-      <br>
-      <form id="form">
-        <div class="form-group">
-          <label for="countTo">Count up to</label>
-          <input id="countTo" class="form-control" type="number">
-        </div>
-        <button type="submit" class="btn">submit</button>
-      </form>
+      <div id="header">
+        <h1>PingPong</h1>
+      </div>
+      <div id="rules">
+        <h3>How it works</h3>
+          <p> First enter a number into the count up and count by forms.<p>
+          <ol>
+            <li>Numbers divisible by 3 are replaced with "Ping"</li>
+            <li>Numbers divisible by 3 are replaced with "Pong"</li>
+            <li>Numbers divisible by 3 and 5 are replaced with "PingPong"</li>
+          </ol>
+      </div>
+      <div id="counterMenu">
+        <form id="form">
+          <div class="form-group">
+            <label for="countTo">Count up to</label>
+            <input id="countTo" class="form-control" type="number">
+          </div>
+          <div class="form-group">
+            <label for="CountBy">Count By</label>
+            <input id="countBy" class="form-control" type="number">
+          </div>
+          <button type="submit" class="btn">submit</button>
+        </form>
+      </div>
       <div id="results">
+        <h3>COUNT!</h3>
         <ul>
         </ul>
       </div>

@@ -1,3 +1,37 @@
-ul{
+ul, ol{
   list-style-type: none;
+  padding-left: 10px;
+}
+
+#header{
+  padding: 20px;
+  background-color: #998542;
+  text-align: center;
+}
+#rules{
+  float:left;
+  width: 300px;
+  background-color: #44693d;
+  height:500px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight:bold;
+}
+#counterMenu{
+  float:left;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 300px;
+  margin-right: 50px;
+  height:500px;
+  background-color: #165c7d;
+  font-weight: bolder;
+  color:white;
+}
+#results{
+  text-align: center;
+  float:left;
+  padding-left: 90px;
+  display: none;
 }
